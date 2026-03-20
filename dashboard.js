@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const txnTbody = document.getElementById('txn-tbody');
   const txnCountBadge = document.getElementById('txn-count-badge');
   if (txnTbody) {
-    const methodColor = { 'EcoCash': '#16a34a', 'InnBucks': '#1d4ed8', 'Cash': '#374151' };
+    const methodColor = { 'EcoCash': '#dc2626', 'InnBucks': '#1d4ed8', 'Cash': '#374151' };
     txnTbody.innerHTML = transactions.map(t => `
       <tr>
         <td><span class="ref-code">${t.id}</span></td>
