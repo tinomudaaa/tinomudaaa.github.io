@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sell a Service — AU Marketplace</title>
+  <meta name="description" content="Register as a student seller on AU Marketplace. List your service, set your price, and start earning while contributing to the AU SRC Development Fund." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="reg-page">
+
+<!-- NAVBAR -->
+<header class="navbar" role="banner">
+  <div class="container">
+    <nav class="navbar-inner" aria-label="Main navigation">
+      <a href="index.html" class="navbar-logo" aria-label="AU Marketplace Home">
+        <div class="navbar-logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <span class="logo-text">AU <span>Marketplace</span></span>
+      </a>
+      <div class="navbar-actions">
+        <a href="index.html" class="btn btn-outline" style="color:white; border-color:rgba(255,255,255,0.3); padding:0.45rem 1rem; font-size:0.84rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          Browse Services
+        </a>
+        <a href="dashboard.html" class="btn btn-outline" style="color:white; border-color:rgba(255,255,255,0.3); padding:0.45rem 1rem; font-size:0.84rem;">Dashboard</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE BODY -->
+<div class="reg-container">
+
+  <!-- Back link -->
+  <a href="index.html" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.85rem; color:var(--muted); margin-bottom:1.5rem; font-weight:500;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    Back to Marketplace
+  </a>
+
+  <div class="reg-card">
+    <!-- Header -->
+    <div class="reg-header">
+      <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+        <div style="width:42px; height:42px; background:var(--green); border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+        </div>
+        <div>
+          <h2>List Your Service</h2>
+          <p>Join AU Marketplace and start earning from your skills</p>
+        </div>
+      </div>
+      <!-- Revenue info strip -->
+      <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:var(--radius-md); padding:0.85rem 1rem; display:flex; align-items:center; gap:0.75rem; font-size:0.82rem; color:rgba(255,255,255,0.7); flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:0.4rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <strong style="color:var(--white);">90%</strong> goes to you
+        </div>
+        <div style="display:flex; align-items:center; gap:0.4rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <strong style="color:var(--white);">10%</strong> to SRC Development Fund
+        </div>
+        <div style="display:flex; align-items:center; gap:0.4rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Free to register
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="reg-body">
+      <form id="seller-form" novalidate autocomplete="off">
+
+        <!-- Section: Personal Info -->
+        <div style="margin-bottom:1.75rem;">
+          <h4 style="margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem; color:var(--black-soft);">
+            <span style="width:24px; height:24px; border-radius:50%; background:var(--black); color:var(--white); display:inline-flex; align-items:center; justify-content:center; font-size:0.7rem; font-weight:700;">1</span>
+            Personal Information
+          </h4>
+          <div class="form-grid form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="field-name">Full Name <span style="color:#dc2626;">*</span></label>
+              <input type="text" class="form-input" id="field-name" name="name" placeholder="e.g. Rutendo Moyo" required />
+              <span class="form-error" id="err-name">Please enter your full name.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-student-id">Student ID <span style="color:#dc2626;">*</span></label>
+              <input type="text" class="form-input" id="field-student-id" name="studentId" placeholder="e.g. AU2023256" required />
+              <span class="form-error" id="err-student-id">Please enter your student ID.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-year">Year of Study <span style="color:#dc2626;">*</span></label>
+              <select class="form-select" id="field-year" name="year" required>
+                <option value="">— Select year —</option>
+                <option value="1">Year 1</option>
+                <option value="2">Year 2</option>
+                <option value="3">Year 3</option>
+                <option value="4">Year 4</option>
+                <option value="5">Year 5 (Postgrad)</option>
+              </select>
+              <span class="form-error" id="err-year">Please select your year.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-faculty">Faculty <span style="color:#dc2626;">*</span></label>
+              <select class="form-select" id="field-faculty" name="faculty" required>
+                <option value="">— Select faculty —</option>
+                <option>Theology & Religious Studies</option>
+                <option>Social Sciences</option>
+                <option>Business Administration</option>
+                <option>Information Technology</option>
+                <option>Sciences</option>
+                <option>Communication & Media</option>
+                <option>Education</option>
+                <option>Health Sciences</option>
+              </select>
+              <span class="form-error" id="err-faculty">Please select your faculty.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Section: Service Info -->
+        <div style="margin-bottom:1.75rem;">
+          <h4 style="margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem; color:var(--black-soft);">
+            <span style="width:24px; height:24px; border-radius:50%; background:var(--black); color:var(--white); display:inline-flex; align-items:center; justify-content:center; font-size:0.7rem; font-weight:700;">2</span>
+            Service Details
+          </h4>
+          <div class="form-grid" style="gap:1.25rem;">
+            <div class="form-grid form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="field-category">Service Category <span style="color:#dc2626;">*</span></label>
+                <select class="form-select" id="field-category" name="category" required>
+                  <option value="">— Select category —</option>
+                  <option>Food</option>
+                  <option>Photography</option>
+                  <option>Design</option>
+                  <option>Tech</option>
+                  <option>Academic</option>
+                  <option>Beauty</option>
+                  <option>Entertainment</option>
+                  <option>Fashion</option>
+                </select>
+                <span class="form-error" id="err-category">Please select a category.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-price">Price (USD) <span style="color:#dc2626;">*</span></label>
+                <input type="number" class="form-input" id="field-price" name="price" min="0.50" step="0.50" placeholder="e.g. 5.00" required />
+                <span class="form-hint" id="price-hint" style="display:none;"></span>
+                <span class="form-error" id="err-price">Please enter a valid price (min $0.50).</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-title">Service Title <span style="color:#dc2626;">*</span></label>
+              <input type="text" class="form-input" id="field-title" name="title" placeholder="e.g. Professional Photography &amp; Editing" required maxlength="80" />
+              <span class="form-error" id="err-title">Please enter a service title.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-description">Service Description <span style="color:#dc2626;">*</span></label>
+              <textarea class="form-textarea" id="field-description" name="description" placeholder="Describe what you offer, what's included, turnaround time, any requirements…" required minlength="40" style="min-height:140px;"></textarea>
+              <div style="display:flex; justify-content:space-between;">
+                <span class="form-error" id="err-description">Description must be at least 40 characters.</span>
+                <span class="form-hint" id="desc-count" style="display:block; text-align:right;">0 / 40 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Section: Payment -->
+        <div style="margin-bottom:2rem;">
+          <h4 style="margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem; color:var(--black-soft);">
+            <span style="width:24px; height:24px; border-radius:50%; background:var(--black); color:var(--white); display:inline-flex; align-items:center; justify-content:center; font-size:0.7rem; font-weight:700;">3</span>
+            Payment Preference
+          </h4>
+          <div class="form-group">
+            <label class="form-label" for="field-payment">Preferred Payment Method <span style="color:#dc2626;">*</span></label>
+            <select class="form-select" id="field-payment" name="paymentMethod" required style="max-width:360px;">
+              <option value="">— Select method —</option>
+              <option value="EcoCash">EcoCash</option>
+              <option value="InnBucks">InnBucks</option>
+              <option value="Cash">Physical Cash (receipt required)</option>
+              <option value="EcoCash & Cash">EcoCash &amp; Cash</option>
+              <option value="InnBucks & Cash">InnBucks &amp; Cash</option>
+            </select>
+            <span class="form-hint">How you prefer to receive payment from buyers.</span>
+            <span class="form-error" id="err-payment">Please select a payment method.</span>
+          </div>
+        </div>
+
+        <!-- SRC Notice -->
+        <div style="background:var(--green-light); border:1px solid rgba(22,163,74,0.2); border-radius:var(--radius-md); padding:1rem 1.1rem; margin-bottom:1.75rem; display:flex; gap:0.75rem; align-items:flex-start;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:0.1rem;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div style="font-size:0.84rem; color:var(--green-dark); line-height:1.6;">
+            <strong>SRC Agreement:</strong> By registering, you agree that 10% of each transaction will be contributed to the Africa University SRC Development Fund. The SRC Finance Secretary tracks all transactions via receipt reference numbers.
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn btn-primary btn-lg btn-full" id="submit-btn" aria-label="Register as a seller">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Register &amp; List My Service
+        </button>
+        <p style="text-align:center; font-size:0.8rem; color:var(--muted); margin-top:1rem;">Your service will go live immediately after registration</p>
+      </form>
+
+      <!-- Success State (hidden initially) -->
+      <div id="success-state" style="display:none; text-align:center; padding:2.5rem 1rem;">
+        <div style="width:72px; height:72px; border-radius:50%; background:var(--green-light); display:flex; align-items:center; justify-content:center; margin:0 auto 1.25rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h2 style="font-size:1.6rem; color:var(--black-soft); margin-bottom:0.75rem;">You're Live!</h2>
+        <p style="color:var(--muted); margin-bottom:2rem; max-width:360px; margin-left:auto; margin-right:auto;">Your service has been registered. Students can now find and book you on AU Marketplace.</p>
+        <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
+          <a href="index.html" class="btn btn-primary btn-lg">View Marketplace</a>
+          <button class="btn btn-outline btn-lg" id="register-another-btn">List Another Service</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast toast-success" id="toast" role="alert" aria-live="assertive"></div>
+
+<script src="app.js"></script>
+<script src="seller.js"></script>
+</body>
+</html>
