@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Validation helpers
   const fields = {
     name: { id: 'field-name', err: 'err-name', validate: v => v.trim().length >= 2 },
-    studentId: { id: 'field-student-id', err: 'err-student-id', validate: v => v.trim().length >= 4 },
+    studentId: { id: 'field-student-id', err: 'err-student-id', validate: v => /^\d{6}$/.test(v.trim()) },
     year: { id: 'field-year', err: 'err-year', validate: v => !!v },
     faculty: { id: 'field-faculty', err: 'err-faculty', validate: v => !!v },
     category: { id: 'field-category', err: 'err-category', validate: v => !!v },
